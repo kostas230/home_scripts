@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+	<menu id="root-menu" label="OpenBox 3">
+		<item label="Web Browser"> <action name="Execute">
+			<execute>Chromium</execute>
+		</action> </item>
+		<item label="File Manager"> <action name="Execute">
+			<execute>pcmanfm</execute>
+		</action> </item>
+		<separator/>
+		<menu id="personalization" label="Desktop Preferences">
+			<item label="Wallpaper Settings"> <action name="Execute">
+				<execute>nitrogen</execute>
+			</action> </item>
+			<item label="Window Settings"> <action name="Execute">
+				<execute>obconf</execute>
+			</action> </item>
+			<item label="Display Settings"> <action name="Execute">
+				<execute>lxrandr</execute>
+			</action> </item>
+		</menu>
+		<menu id="games" label="Games"> 
+			<item label="Steam"> <action name="Execute">
+				<execute>steam</execute>
+			</action> </item>
+			<separator/>
+		</menu>
+		<separator/>
+		<menu id="office" label="Office">
+			<item label="LibreOffice Suite"> <action name="Execute">
+				<execute>libreoffice</execute>
+			</action> </item>
+			<item label="LibreOffice Writer"> <action name="Execute">
+				<execute>libreoffice --writer</execute>
+			</action> </item>
+			<item label="LibreOffice Calc"> <action name="Execute">
+				<execute>libreoffice --calc</execute>
+			</action> </item>
+			<item label="LibreOffice Impress"> <action name="Execute">
+				<execute>libreoffice --impress</execute>
+			</action> </item>
+			<item label="LibreOffice Draw"> <action name="Execute">
+				<execute>libreoffice --draw</execute>
+			</action> </item>
+			<item label="Document Viewer"> <action name="Execute">
+				<execute>evince</execute>
+			</action> </item>
+		</menu>
+		<menu id="utilities" label="Utilities">
+			<item label="GIMP"> <action name="Execute">
+				<execute>gimp</execute>
+			</action> </item>
+			<item label="Image Viewer"> <action name="Execute">
+				<execute>mirage</execute>
+			</action> </item>
+			<item label="Archiver"> <action name="Execute">
+				<execute>xarchiver</execute>
+			</action> </item>
+			<item label="CD Writer"> <action name="Execute">
+				<execute>brasero</execute>
+			</action> </item>
+			<item label="Terminal"> <action name="Execute">
+				<execute>urxvt</execute>
+			</action> </item>
+			<item label="Torrent Client"> <action name="Execute">
+				<execute>transmission-gtk</execute>
+			</action> </item>
+			<item label="Text Editor"> <action name="Execute">
+				<execute>geany</execute>
+			</action> </item>
+						
+		</menu>
+		<menu id="networksettings" label="Network Settings">
+			<item label="Manage Network Connections"> <action name="Execute">
+				<execute>nm-connection-editor</execute>
+			</action> </item>
+			<item label="Printer Settings"> <action name="Execute">
+				<execute>system-config-printer</execute>
+			</action> </item>
+			<item label="Scan Document"> <action name="Execute">
+				<execute>simple-scan</execute>
+			</action> </item>
+		</menu>
+		<separator/>
+		<item label="End Session"> <action name="Execute">
+			<execute>oblogout</execute>
+		</action> </item>
+	</menu>
+</openbox_menu>
