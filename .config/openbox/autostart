@@ -1,8 +1,0 @@
-compton -b -f &
-urxvtd -q --o -f &
-nitrogen --restore &
-pcmanfm -d &
-cairo-dock -o &
-xrdb -merge ~/.Xresources &
-hp-systray &
-steam -silent &
