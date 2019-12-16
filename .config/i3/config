@@ -16,17 +16,7 @@ set $alt Mod1
 # is used in the bar {} block below.
 #font pango:monospace 8
 
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 8
-
-# The combination of xss-lock, nm-applet and pactl is a popular choice, so
-# they are included here as an example. Modify as you see fit.
-
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-
+font pango:FontAwesome 8
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -146,16 +136,10 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Pause exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit?' -B 'Logout' 'i3-msg exit' -B 'Restart' 'systemctl reboot' -B 'Shutdown' 'systemctl poweroff'"
-
-# start chromium
-bindsym $mod+c exec chromium
+bindsym $mod+Pause exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit?' -B 'Logout' 'i3-msg exit'"
 
 # start pcmanfm
 bindsym $mod+p exec pcmanfm
-
-# take screenshot
-bindsym Print exec xfce4-screenshooter
 
 # start task manager
 bindsym Ctrl+$alt+Delete exec lxtask
@@ -196,13 +180,23 @@ bar {
         status_command i3status
 }
 
+# The combination of xss-lock, nm-applet and pactl is a popular choice, so
+# they are included here as an example. Modify as you see fit.
+# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
+# screen before suspend. Use loginctl lock-session to lock your screen.
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+
+# Merge the .Xresources file
 exec --no-startup-id xrdb -merge ~/.Xresources
-exec --no-startup-id compton -b -f &
-exec --no-startup-id urxvtd -q -o -f &
-exec --no-startup-id nitrogen --restore &
-exec --no-startup-id pasystray &
-exec --no-startup-id nm-applet &
-exec --no-startup-id steam -silent &
-exec --no-startup-id caprine --minimize &
-exec --no-startup-id pcmanfm -d &
-exec --no-startup-id hp-systray &
+
+# URxvt Daemon
+exec --no-startup-id urxvtd -q -o -f
+
+# Pulseaudio manager (tray applet)
+exec --no-startup-id pasystray
+
+# Network Manager (tray applet)
+exec --no-startup-id nm-applet
+
+# PCManFM Daemon
+exec --no-startup-id pcmanfm -d
