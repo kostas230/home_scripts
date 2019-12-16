@@ -9,6 +9,7 @@
 general {
         colors = true
         interval = 5
+	markup = "pango"
 }
 
 order += "ipv6"
@@ -29,22 +30,26 @@ ethernet _first_ {
         format_down = " LAN: down "
 }
 
-disk "/" {
-        format = " Root: %used / %total (Free: %percentage_free) "
-}
+#disk "/" {
+#        format = " <span size='medium' font_weight='light'>INSERT ICON HERE</span> %avail "
+#}
 
-disk "/home" {
-	format = " Home: %used / %total (Free: %percentage_free) "
-}
+#disk "/home" {
+#	format = " <span size='medium' font_weight='light'>INSERT ICON HERE</span> %avail "
+#}
 
-memory {
-        threshold_degraded = " 1G "
-        format_degraded = " MEMORY < %available "
-	format = " Memory: %used / %total | Used: %percentage_used | Free: %percentage_available "
-}
+#disk "/home_storage" {
+#	format = " <span size='medium' font_weight='light'>INSERT ICON HERE</span> %avail "
+#}
+
+#memory {
+#       threshold_degraded = " 1G "
+#       format_degraded = " MEMORY < %available "
+#	format = " <span size='medium' font_weight='light'>INSERT ICON HERE</span> %used | Available: %available "
+#}
 
 tztime local {
-        format = " %A %Y-%m-%d %H:%M "
+        format = " %A, %Y-%m-%d %H:%M"
 }
 
 load {
