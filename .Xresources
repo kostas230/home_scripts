@@ -1,5 +1,5 @@
 URxvt*termName:	rxvt-unicode-256color
-URxvt.perl-ext-common:	default,resize-font
+!URxvt.perl-ext-common:	default,resize-font
 
 !! Clipboard
 
@@ -11,8 +11,8 @@ URxvt.keysym.C-M-v:	builtin-string:
 
 !! Font resize
 
-URxvt.keysym.C-Up: 	resize-font:bigger
-URxvt.keysym.C-Down:	resize-font:smaller
+!URxvt.keysym.C-Up: 	resize-font:bigger
+!URxvt.keysym.C-Down:	resize-font:smaller
 
 URxvt.keysym.C-minus:	builtin-string:
 URxvt.keysym.C-plus:	builtin-string:
