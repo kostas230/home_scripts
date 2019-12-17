@@ -187,7 +187,7 @@ bar {
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # Merge the .Xresources file
-exec --no-startup-id xrdb -merge ~/.Xresources
+exec --no-startup-id xrdb -merge ~/.config/.Xresources
 
 # URxvt Daemon
 exec --no-startup-id urxvtd -q -o -f

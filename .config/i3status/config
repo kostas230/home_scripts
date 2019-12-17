@@ -14,10 +14,10 @@ general {
 
 order += "ipv6"
 order += "ethernet _first_"
+order += "cpu_usage"
 order += "disk /"
 order += "disk /home"
 order += "disk /home_storage"
-order += "load"
 order += "memory"
 order += "tztime local"
 
@@ -31,28 +31,28 @@ ethernet _first_ {
         format_down = " LAN: down "
 }
 
-#disk "/" {
-#        format = " <span size='medium' font_weight='light'>INSERT ICON HERE</span> %avail "
-#}
-
-#disk "/home" {
-#	format = " <span size='medium' font_weight='light'>INSERT ICON HERE</span> %avail "
-#}
-
-#disk "/home_storage" {
-#	format = " <span size='medium' font_weight='light'>INSERT ICON HERE</span> %avail "
-#}
-
-#memory {
-#       threshold_degraded = " 1G "
-#       format_degraded = " MEMORY < %available "
-#	format = " <span size='medium' font_weight='light'>INSERT ICON HERE</span> %used | Available: %available "
-#}
-
-tztime local {
-        format = " %A, %Y-%m-%d %H:%M"
+cpu_usage {
+	format = " CPU: %usage Core 1: %cpu0 Core 2: %cpu1 Core 3: %cpu2 Core 4: %cpu3 "
 }
 
-load {
-        format = "%1min"
+disk "/" {
+        format = " <span size='medium' font_weight='light'></span> %avail "
+}
+
+disk "/home" {
+	format = " <span size='medium' font_weight='light'></span> %avail "
+}
+
+disk "/home_storage" {
+	format = " <span size='medium' font_weight='light'></span> %avail "
+}
+
+memory {
+	threshold_degraded = " 1G "
+	format_degraded = " MEMORY < %available "
+	format = " <span size='medium' font_weight='light'></span> %used (Available: %available) "
+}
+
+tztime local {
+        format = " %A %Y-%m-%d %H:%M"
 }
