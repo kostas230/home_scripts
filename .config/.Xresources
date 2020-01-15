@@ -1,21 +1,9 @@
 URxvt*termName:	rxvt-unicode-256color
-!URxvt.perl-ext-common:	default,resize-font
 
 !! Clipboard
 
-URxvt.keysym.M-c: 	eval:selection_to_clipboard
-URxvt.keysym.M-v:	eval:paste_clipboard
-
-URxvt.keysym.C-M-c:	builtin-string:
-URxvt.keysym.C-M-v:	builtin-string:
-
-!! Font resize
-
-!URxvt.keysym.C-Up: 	resize-font:bigger
-!URxvt.keysym.C-Down:	resize-font:smaller
-
-URxvt.keysym.C-minus:	builtin-string:
-URxvt.keysym.C-plus:	builtin-string:
+URxvt.keysym.C-M-c:	eval:selection_to_clipboard
+URxvt.keysym.C-M-v:	eval:paste_clipboard
 
 ! Disable printing
 
