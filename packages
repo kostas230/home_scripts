@@ -106,6 +106,8 @@ rtorrent
 	libtorrent
 	xmlrpc-c
 plexmediaserver			groupadd -g 279 plex && useradd -u 279 -d /var/lib/plexmediaserver -s /bin/false -g plex plex
+powerline-status
+xdotool
 
 -----------------
 firewalld-que
