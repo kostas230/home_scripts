@@ -1,0 +1,87 @@
+pcmanfm	
+	libfm
+		lxmenu-data
+		menu-cache
+			libfm-extra
+lxappearance
+
+lxtask
+	lxde-common
+	lxpanel
+------------------------------------------------------
+
+i3-gaps
+	dmenu
+	libev
+	libxkbcommon
+	xcb-util-xrm
+	yajl
+	perl-JSON-XS
+		perl-Canary-Stability
+		perl-Types-Serialiser
+			perl-common-sense
+	perl-AnyEvent
+	i3status
+		confuse
+------------------------------------------------------
+mpv
+	jack-audio-connection-kit
+		libffado
+			libconfig
+			libdbus-c++
+			libiec61883
+			libxml++
+		celt
+	libfdk-aac
+	libuchardet
+	libplacebo
+	libass
+		enca
+			recode
+			perl-Cstools
+			perl-Unicode-Map
+			perl-Unicode-Map8
+				perl-Unicode-String
+	OpenAL
+	lua
+	mujs
+	rubberband
+		ladspa_sdk
+		vamp-plugin-sdk
+	youtube-dl
+		
+---------------------------------------------------------------
+papirus-icon-theme
+telegram
+telegram-purple
+evince
+	libgxps
+
+simple-scan
+	colord			BASH_COMPLETION=yes ARGYLL=yes
+		libgusb		
+		argyllcms
+			jam		
+	packagekit
+		autoconf-archive
+feh				EXIF=yes HELP=yes INOTIFY=yes STAT64=yes
+	imlib2
+xarchiver
+	unrar
+	p7zip
+steam
+geany
+wine				WINE64=yes
+winetricks
+cabextract
+rtorrent
+	libtorrent
+	xmlrpc-c
+
+---------------------------------------------------------------
+
+firewalld			WARNING: The Downloaded file has the name v0.5.1.tar.gz. Rename it to firewalld-0.5.1.tar.gz
+	python-slip
+	decorator
+audit
+apparmor
