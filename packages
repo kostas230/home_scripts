@@ -1,5 +1,6 @@
+-----------------
 lxde-basics-que
----------------
+-----------------
 
 pcmanfm	
 	libfm
@@ -13,7 +14,9 @@ lxtask
 	lxpanel
 papirus-icon-theme
 
-------------------------------------------------------
+-----------------
+i3-gaps-que
+-----------------
 
 i3-gaps
 	dmenu
@@ -28,7 +31,11 @@ i3-gaps
 	perl-AnyEvent
 	i3status
 		confuse
-------------------------------------------------------
+		
+-----------------
+mpv-que
+-----------------
+
 mpv
 	jack-audio-connection-kit
 		libffado
@@ -55,7 +62,9 @@ mpv
 		vamp-plugin-sdk
 	youtube-dl
 		
-------------------------------------------------------
+-----------------
+desktop-apps-que
+-----------------
 
 telegram
 telegram-purple
@@ -83,7 +92,9 @@ rtorrent
 	libtorrent
 	xmlrpc-c
 
-------------------------------------------------------
+-----------------
+firewalld-que
+-----------------
 
 firewalld			WARNING: The Downloaded file has the name v0.5.1.tar.gz. Rename it to firewalld-0.5.1.tar.gz
 	python-slip
