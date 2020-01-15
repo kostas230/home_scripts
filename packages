@@ -8,6 +8,8 @@ lxappearance
 lxtask
 	lxde-common
 	lxpanel
+papirus-icon-theme
+
 ------------------------------------------------------
 
 i3-gaps
@@ -51,7 +53,7 @@ mpv
 	youtube-dl
 		
 ---------------------------------------------------------------
-papirus-icon-theme
+
 telegram
 telegram-purple
 evince
@@ -83,5 +85,3 @@ rtorrent
 firewalld			WARNING: The Downloaded file has the name v0.5.1.tar.gz. Rename it to firewalld-0.5.1.tar.gz
 	python-slip
 	decorator
-audit
-apparmor
