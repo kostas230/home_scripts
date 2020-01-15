@@ -31,6 +31,28 @@ i3-gaps
 	perl-AnyEvent
 	i3status
 		confuse
+feh				EXIF=yes HELP=yes INOTIFY=yes STAT64=yes
+	imlib2
+	
+-----------------
+openbox-que
+-----------------
+openbox
+openbox-themes
+openbox-themes-extra
+openbox-simple-theme
+	gtk-engines
+	gtk-engines-unico
+	murrine
+arc-openbox
+	arc-theme
+		inkscape
+		optipng
+		sassc
+	arc-icon-theme
+openbox-menu
+	gnome-menus
+lxappearance-obconf
 		
 -----------------
 mpv-que
@@ -78,8 +100,6 @@ simple-scan
 			jam		
 	packagekit
 		autoconf-archive
-feh				EXIF=yes HELP=yes INOTIFY=yes STAT64=yes
-	imlib2
 xarchiver
 	unrar
 	p7zip
