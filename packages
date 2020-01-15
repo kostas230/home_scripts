@@ -37,22 +37,15 @@ feh				EXIF=yes HELP=yes INOTIFY=yes STAT64=yes
 -----------------
 openbox-que
 -----------------
+
 openbox
 openbox-themes
 openbox-themes-extra
-openbox-simple-theme
-	gtk-engines
-	gtk-engines-unico
-	murrine
-arc-openbox
-	arc-theme
-		inkscape
-		optipng
-		sassc
-	arc-icon-theme
 openbox-menu
 	gnome-menus
 lxappearance-obconf
+tint2
+nitrogen
 		
 -----------------
 mpv-que
@@ -90,11 +83,12 @@ desktop-apps-que
 
 telegram
 telegram-purple
+purple-facebook
 evince
 	libgxps
 
 simple-scan
-	colord			BASH_COMPLETION=yes ARGYLL=yes
+	colord			BASH_COMPLETION=yes ARGYLL=yes,		groupadd -g 303 colord && useradd -d /var/lib/colord -u 303 -g colord -s /bin/false colord
 		libgusb		
 		argyllcms
 			jam		
@@ -111,6 +105,7 @@ cabextract
 rtorrent
 	libtorrent
 	xmlrpc-c
+plexmediaserver			groupadd -g 279 plex && useradd -u 279 -d /var/lib/plexmediaserver -s /bin/false -g plex plex
 
 -----------------
 firewalld-que
