@@ -42,24 +42,12 @@ bindsym $mod+d exec dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
-
-# alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
-
-# alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
@@ -193,8 +181,8 @@ exec --no-startup-id urxvtd -q -o -f
 # Pulseaudio manager (tray applet)
 exec --no-startup-id pasystray
 
-# PCManFM Daemon
-exec --no-startup-id pcmanfm -d
+# Thunar Daemon
+exec --no-startup-id thunar --daemon
 
 # Telegram
 exec --no-startup-id Telegram -startintray
