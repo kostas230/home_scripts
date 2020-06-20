@@ -42,8 +42,6 @@ bind-key	MS-7	window-movetogroup-7
 bind-key	MS-8	window-movetogroup-8
 bind-key	MS-9	window-movetogroup-9
 
-autogroup	9	"web.telegram.org,firefox"
-
 # ================
 # Unbind some keys
 # ================
