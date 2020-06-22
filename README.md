@@ -1,3 +1,3 @@
 Requires extra fonts:
 
-# pkg_add powerline-fonts spleen
+pkg_add powerline-fonts spleen
