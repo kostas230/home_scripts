@@ -1,3 +1,3 @@
-Xorg conf files are put in
+Requires extra fonts:
 
-/usr/local/etc/X11/xorg.conf.d/
+# pkg_add powerline-fonts spleen
