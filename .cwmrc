@@ -1,3 +1,10 @@
+# ================
+# Unbind some keys
+# ================
+
+# Unbind key for launching xterm
+unbind-key	CM-Return
+
 # ==== Quick Notes ==== #
 #
 # Win-Enter	spawns a rxvt-unicode terminal
@@ -12,7 +19,6 @@
 
 # Sticky group mode (see cwmrc(5) for details)
 sticky yes
-autogroup 	0	xclock
 
 # ==========
 # Workgroups
@@ -42,14 +48,6 @@ bind-key	MS-7	window-movetogroup-7
 bind-key	MS-8	window-movetogroup-8
 bind-key	MS-9	window-movetogroup-9
 
-# ================
-# Unbind some keys
-# ================
-
-# Unbind key for launching xterm
-unbind-key	CM-Return
-
-
 # ==================
 # Lauch Applications
 # ==================
@@ -58,7 +56,7 @@ unbind-key	CM-Return
 bind-key	4-Return	urxvt
 
 # Win-b spawns browser
-bind-key	4-b		firefox
+bind-key	4-b		'chrome --enable-unveil'
 
 # Win-f spawns ranger file manager
 bind-key	4-f		'urxvt -e ranger'
