@@ -52,3 +52,4 @@ set ttyfast
 set viminfo='100,<9999,s100
 
 let g:powerline_pycmd="py3"
+let g:tex_flavor="latex"
