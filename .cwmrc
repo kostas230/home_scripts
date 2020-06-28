@@ -23,7 +23,7 @@ sticky yes
 # Workspaces
 # ==========
 
-# Keypan-[n] switches to workspace [n]
+# Alt-[n] switches to workspace [n]
 
 bind-key	M-1			group-only-1
 bind-key	M-2			group-only-2
@@ -35,7 +35,7 @@ bind-key	M-7			group-only-7
 bind-key	M-8			group-only-8
 bind-key	M-9			group-only-9
 
-# Win-Keypad-[n] moves selected window to workspace [n]
+# Alt-Shift-[n] moves selected window to workspace [n]
 
 bind-key	MS-1			window-movetogroup-1
 bind-key	MS-2			window-movetogroup-2
