@@ -19,6 +19,9 @@ unbind-key	all
 # Sticky group mode (see cwmrc(5) for details)
 sticky yes
 
+# XClock appears to every workspace
+autogroup 0 XClock
+
 # ==========
 # Workspaces
 # ==========
@@ -116,8 +119,8 @@ bind-key	MS-r			restart
 bind-key	MS-Greek_rho		restart
 
 # Alt-d spawns an application menu
-bind-key	Alt-d			menu-exec
-bind-key	Alt-Greek_delta		menu-exec
+bind-key	M-d			menu-exec
+bind-key	M-Greek_delta		menu-exec
 
 # ==================
 # Lauch Applications
