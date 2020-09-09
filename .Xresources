@@ -55,12 +55,13 @@ URxvt.urgentOnBell:	true
 URxvt.depth:		32
 URxvt.iso14755:		false
 
-URxvt.font:		xft:Ubuntu Mono derivative Powerline:	size=13, \
-			xft:Inconsolata for Powerline:		size=13, \
-			xft:DejaVuSansMono for Powerline:	size=13, \
-			xft:Droid Sans Mono for Powerline:	size=13, \
-			xft:Roboto Mono for Powerline:		size=13, \
-			xft:Noto Mono for Powerline:		size=13, \
+URxvt.font:		xft:UbuntuMono Nerd Font:			size=13, \
+			xft:Inconsolata Nerd Font Mono:			size=13, \
+			xft:DejaVuSansMono Nerd Font:			size=13, \
+			xft:DroidSansMono Nerd Font:			size=13, \
+			xft:FuraMono Nerd Font:				size=13, \
+			xft:RobotoMono Nerd Font:			size=13, \
+			xft:Noto Sans Mono:				size=13, \
 			xft:Monospace:style=Medium:antialias=false
 
 Urxvt.cursorColor:	white
