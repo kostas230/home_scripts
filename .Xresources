@@ -64,3 +64,13 @@ URxvt.font:		xft:Ubuntu Mono derivative Powerline:	size=13, \
 			xft:Monospace:style=Medium:antialias=false
 
 Urxvt.cursorColor:	white
+
+!! Hotkeys
+
+! Copy-Paste
+
+URxvt.keysym.Shift-Control-V:	eval:paste_clipboard
+URxvt.keysym.Shift-Control-C:	eval:selection_to_clipboard
+
+URxvt.keysym.Control-Meta-c:	builtin-string:
+URxvt.keysym.Control-Meta-v:	builtin-string:
