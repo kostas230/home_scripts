@@ -1,8 +1,8 @@
 !! Colorscheme
 
 ! special
-*.foreground: #93a1a1
-*.background: #141c21
+*.foreground: #ffffff
+*.background: #000000
 *.cursorColor: #afbfbf
 
 ! black
