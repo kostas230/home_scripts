@@ -1,9 +1,12 @@
+source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
 xrandr --setprovideroutputsource modesetting NVIDIA-0 
 xrandr -s 2048x1152 -r 60 
-#xrandr -s 2048x1152 -r 60 & 
+setxkbmap -layout us,gr -option grp:win_space_toggle &
 xrdb -merge ~/.Xresources &
-#xscreensaver -no-splash &
+xscreensaver -no-splash &
 sleep 5; feh --bg-scale ~/.config/home_scripts/wallpaper.jpg &
 sleep 5; telegram-desktop &
 sleep 5; tint2 &
+sleep 5; thunderbird &
+sleep 10; steam &
 cwm

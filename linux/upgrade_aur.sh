@@ -9,8 +9,10 @@ git clone https://aur.archlinux.org/tor-browser.git
 git clone https://aur.archlinux.org/zoom.git
 git clone https://aur.archlinux.org/nvidia-470xx-utils.git
 git clone https://aur.archlinux.org/lib32-nvidia-470xx-utils.git
+git clone https://aur.archlinux.org/python-vdf.git
 git clone https://aur.archlinux.org/protontricks.git
 
+gpg --recv-keys E9DE70742CFE5BF9
 cd ~/.src/cwm
 makepkg -si
 
@@ -31,6 +33,9 @@ cd ~/.src/nvidia-470xx-utils
 makepkg -si
 
 cd ~/.src/lib32-nvidia-470xx-utils
+makepkg -si
+
+cd ~/.src/python-vdf
 makepkg -si
 
 cd ~/.src/protontricks
