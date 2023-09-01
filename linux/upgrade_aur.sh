@@ -7,7 +7,9 @@ git clone https://aur.archlinux.org/skypeforlinux-stable-bin.git
 git clone https://aur.archlinux.org/nordvpn-bin.git
 git clone https://aur.archlinux.org/tor-browser.git 
 git clone https://aur.archlinux.org/zoom.git
-git clone https://aur.archlinux.org/snapd.git
+git clone https://aur.archlinux.org/nvidia-470xx-utils.git
+git clone https://aur.archlinux.org/lib32-nvidia-470xx-utils.git
+git clone https://aur.archlinux.org/protontricks.git
 
 cd ~/.src/cwm
 makepkg -si
@@ -25,8 +27,14 @@ makepkg -si
 cd ~/.src/zoom
 makepkg -si 
 
-cd ~/.src/snapd
+cd ~/.src/nvidia-470xx-utils
 makepkg -si
+
+cd ~/.src/lib32-nvidia-470xx-utils
+makepkg -si
+
+cd ~/.src/protontricks
+makepkg -si 
 
 cd
 rm -rf ~/.src/*

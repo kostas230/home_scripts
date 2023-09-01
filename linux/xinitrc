@@ -1,9 +1,9 @@
-export LC_CTYPE="en_US.UTF-8"
-xrandr -s 2048x1152 -r 60 & 
-setxkbmap -layout us,gr -option grp:win_space_toggle &
+xrandr --setprovideroutputsource modesetting NVIDIA-0 
+xrandr -s 2048x1152 -r 60 
+#xrandr -s 2048x1152 -r 60 & 
 xrdb -merge ~/.Xresources &
-sleep 5; feh --bg-scale ~/Pictures/Wallpapers/wallpaper.jpg &
+#xscreensaver -no-splash &
+sleep 5; feh --bg-scale ~/.config/home_scripts/wallpaper.jpg &
 sleep 5; telegram-desktop &
-xscreensaver -no-splash &
 sleep 5; tint2 &
 cwm
