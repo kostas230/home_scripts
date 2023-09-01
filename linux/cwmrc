@@ -17,21 +17,10 @@
 unbind-key	all
 
 # Sticky group mode (see cwmrc(5) for details)
-sticky yes
+sticky		yes
 
 # XClock appears to every workspace
-autogroup 0 XClock
-
-# =============
-# Audio control
-# =============
-
-# Fn - F1 toggles between mute and unmute
-bind-key	XF86AudioMute		'amixer -D pulse set Master 1+ toggle'
-bind-key	XF86AudioLowerVolume	'amixer -q -D pulse sset Master 5%-'
-bind-key	XF86AudioRaiseVolume	'amixer -q -D pulse sset Master 5%+'
-bind-key	XF86MonBrightnessDown	'xbacklight -dec 10'
-bind-key	XF86MonBrightnessUp	'xbacklight -inc 10'
+autogroup 0	xclock
 
 # ==========
 # Workspaces
@@ -67,7 +56,6 @@ bind-key	MS-9			window-movetogroup-9
 
 # Win-Shift-q closes window
 bind-key	MS-q			window-close
-bind-key	M-colon			window-close
 
 # Alt-Tab cycles between windows in current group
 bind-key	M-Tab			window-cycle-ingroup
@@ -80,15 +68,12 @@ bind-key	MS-Return		window-hide
 
 # Alt-Ctrl-m maximizes window
 bind-key	MC-m			window-maximize
-bind-key	MC-Greek_mu		window-maximize
 
 # Alt-Ctrl-v maximizes window vertically
 bind-key	MC-v			window-vmaximize
-bind-key	MC-Greek_omega		window-vmaximize
 
 # Alt-Ctrl-h maximizes window horizontaly
 bind-key	MC-h			window-hmaximize
-bind-key	MC-Greek_eta		window-hmaximize
 
 # Move amount (pixels)
 moveamount	2
@@ -118,42 +103,48 @@ bind-key	MC-Right		window-resize-right-big
 bind-key	MC-Left			window-resize-left-big
 
 # =================
+# Audio control 
+# =================
+bind-key	XF86AudioRaiseVolume	'sh -c "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ +5%"'
+bind-key	XF86AudioLowerVolume	'sh -c "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ -5%"'
+bind-key	XF86AudioMute		'pactl set-sink-mute @DEFAULT_SINK@ toggle'
+bind-key	XF86AudioMicMute	'pactl set-source-mute 1 toggle'
+bind-key	XF86MonBrightnessUp	'xbacklight -inc +5' 
+bind-key	XF86MonBrightnessDown	'xbacklight -inc -5'
+
+# =================
 # CWM key functions
 # =================
 
 # Alt-Shift-e exits CWM
 bind-key	MS-e			quit
-bind-key	MS-Greek_epsilon	quit
 
 # Alt-Shift-r reloads .cwmrc
 bind-key	MS-r			restart
-bind-key	MS-Greek_rho		restart
 
 # Alt-d spawns an application menu
 bind-key	M-d			menu-exec
-bind-key	M-Greek_delta		menu-exec
 
 # ==================
 # Lauch Applications
 # ==================
 
 # Win-Enter spawns RXVT-unicode terminal
-bind-key	4-Return		urxvt
+bind-key	4-Return		'xterm -fa "Ubuntu Mono" -fs 20'
 
 # Win-b spawns browser
-bind-key	4-b			firefox
-bind-key	4-Greek_beta		firefox
-
-# Win-f spawns ranger file manager
-bind-key	4-f			'urxvt -e ranger'
-bind-key	4-Greek_phi		'urxvt -e ranger'
+bind-key	4-b			chromium
+bind-key	4S-b			tor-browser
 
 # Win-v spanws vim
-bind-key	4-v			'urxvt -e vim'
-bind-key	4-Greek_omega		'urxvt -e vim'
+bind-key	4-v			'xterm -e vim'
+
+# Print Screen spawns screenshooter
+bind-key	Print			xfce4-screenshooter
 
 # ===============================================================
 # Ignore programs by that name by not drawing borders around them
 # ===============================================================
 
-ignore xclock
+borderwidth	0
+ignore		xclock
