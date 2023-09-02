@@ -17,20 +17,10 @@
 unbind-key	all
 
 # Sticky group mode (see cwmrc(5) for details)
-sticky yes
+sticky		yes
 
 # XClock appears to every workspace
-autogroup 0 XClock
-
-# ============
-# XF86 Hotkeys
-# ============
-
-# Fn - F5 decreases brightness
-bind-key	XF86MonBrightnessDown	'xbacklight -dec 10'
-
-# Fn - F6 increases brightness
-bind-key	XF86MonBrightnessUp	'xbacklight -inc 10'
+autogroup 0	xclock
 
 # ==========
 # Workspaces
@@ -66,7 +56,6 @@ bind-key	MS-9			window-movetogroup-9
 
 # Win-Shift-q closes window
 bind-key	MS-q			window-close
-bind-key	M-colon			window-close
 
 # Alt-Tab cycles between windows in current group
 bind-key	M-Tab			window-cycle-ingroup
@@ -131,19 +120,20 @@ bind-key	M-d			menu-exec
 # ==================
 
 # Win-Enter spawns RXVT-unicode terminal
-bind-key	4-Return		urxvt
+bind-key	4-Return		'xterm -fa "Ubuntu Mono" -fs 8'
 
 # Win-b spawns browser
-bind-key	4-b			firefox
-
-# Win-f spawns ranger file manager
-bind-key	4-f			'urxvt -e ranger'
+bind-key	4-b			'chrome --unveil'
 
 # Win-v spanws vim
-bind-key	4-v			'urxvt -e vim'
+bind-key	4-v			'xterm -e vim'
+
+# Print Screen spawns screenshooter
+bind-key	Print			xfce4-screenshooter
 
 # ===============================================================
 # Ignore programs by that name by not drawing borders around them
 # ===============================================================
 
-ignore xclock
+borderwidth	0
+ignore		xclock
