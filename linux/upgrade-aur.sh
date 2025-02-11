@@ -27,9 +27,9 @@ makepkg -sic
 #rc-service mullvad-daemon start
 cd ..
 
-# mullvad-browser-latest-bin
-git clone https://aur.archlinux.org/mullvad-browser-latest-bin.git
-cd mullvad-browser-latest-bin
+# mullvad-browser-bin
+git clone https://aur.archlinux.org/mullvad-browser.git
+cd mullvad-browser-bin
 gpg --recv-keys 157432CF78A65729
 makepkg -sic 
 cd ..
